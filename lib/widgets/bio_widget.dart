@@ -27,9 +27,9 @@ class BioCard extends StatelessWidget {
         leading: Icon(leadingIcon),
         title: Text(
           title,
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Colors.black, fontFamily: 'GemunuLibre', letterSpacing: 2),
         ),
-        subtitle: Text(subTitle),
+        subtitle: Text(subTitle, style: TextStyle(fontFamily: 'GemunuLibre'),),
         trailing: Icon(trailingIcon),
       ),
     );

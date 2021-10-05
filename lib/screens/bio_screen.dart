@@ -9,10 +9,16 @@ class BioScreen extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
-        title: Text(
+        title: const Text(
           'MY BIO',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(
+              color: Colors.white,
+              fontFamily: 'GemunuLibre',
+              fontWeight: FontWeight.bold,
+              fontSize: 25,
+          letterSpacing: 2),
         ),
+
         centerTitle: true,
       ),
       body: Container(
@@ -31,24 +37,28 @@ class BioScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Spacer(),
+              const Spacer(),
               const CircleAvatar(
                 radius: 50,
+                backgroundImage: AssetImage('images/bbb.jpg'),
               ),
               const SizedBox(height: 10),
               const Text(
                 'Sahar Essam',
                 style: TextStyle(
+                  letterSpacing: 2,
+                  fontFamily: 'Lobster',
                   color: Colors.white,
                   fontSize: 18,
-                  fontWeight: FontWeight.bold,
                 ),
               ),
               const SizedBox(height: 5),
               const Text(
                 'e-lancer training',
                 style: TextStyle(
+                  letterSpacing: 4,
                   color: Colors.black,
+                  fontFamily: 'Lobster',
                   fontWeight: FontWeight.bold,
                   fontSize: 15,
                 ),
@@ -79,8 +89,8 @@ class BioScreen extends StatelessWidget {
                   title: 'Course',
                   subTitle: 'Flutter Course',
                   trailingIcon: Icons.bookmark),
-              Spacer(),
-              Text(
+              const Spacer(),
+              const Text(
                 'FLUTTER COURSE',
                 style: TextStyle(letterSpacing: 5, fontSize: 15),
               )
